@@ -12,7 +12,7 @@ public class ConnectedDevice extends Device {
 
     public ConnectedDevice(int year, int batteryLife, int actualYear, List<ConnectedDevice> connectedDevices) {
         super(year, batteryLife, actualYear);
-        this.connectedDevices = connectedDevices;
+        setConnectedDevices(connectedDevices);
     }
 
     @Override
